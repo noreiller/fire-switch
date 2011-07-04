@@ -1,0 +1,9 @@
+{
+    "description": "FireSwitch is a simple addon to switch on/off some behaviors such like JavaScript", 
+    "license": "MPL 1.1/GPL 2.0/LGPL 2.1", 
+    "author": "Aur\u00e9lien MANCA (http://www.amanca.fr)", 
+    "version": "0.2", 
+    "fullName": "Fire Switch", 
+    "id": "jid0-rRkIEWweV0FdnCAPggdbxJB0FHs",
+    "name": "fire-switch"
+}

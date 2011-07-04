@@ -1,0 +1,38 @@
+body {
+  background-color: #fff;
+  padding: 10px;
+}
+h1 {
+  color: #000;
+  font-size: 16px;
+  line-height: 16px;
+  text-shadow: 0 0 5px #ccc;
+}
+h2 {
+  color: #000;
+  font-size: 12px;
+  line-height: 16px;
+  text-shadow: 0 0 5px #ccc;
+}
+ul {
+  color: #000;
+  margin: 10px 0 0;
+}
+li {
+  color: black;
+  cursor: pointer;
+  font-size: 12px;
+  line-height: 16px;
+}
+li.on {
+  color: green;
+}
+li.on:hover {
+  text-shadow: 0 0 5px green;
+}
+li.off {
+  color: red;
+}
+li.off:hover {
+  text-shadow: 0 0 5px red;
+}
