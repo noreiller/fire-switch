@@ -37,26 +37,19 @@ var panel =  {
    * Generate the LI elements based on the addon list
    */
   generateList : function (myItems) {
-    var myLiElements = '';
-    
-    for (key in myItems)
-      myLiElements +=
-        '<li'
-        + ' class="' + (
-          (
-            (myItems[key].value === true && myItems[key].reverted === false)
-            || (myItems[key].value === false && myItems[key].reverted === true)
-          ) ? 'on' : 'off') + '"'
-        + ' rel="' + myItems[key].data + '"'
-        + '>'
-        + myItems[key].label
-        + '</li>'
-      ;
+    let node = jQuery('body ul')
+        .empty();
 
-    jQuery('body ul')
-      .empty()
-      .html(myLiElements)
-    ;
+    for (key in myItems)
+      node.append(jQuery('<li>')
+        .addClass((
+          (myItems[key].value === true && myItems[key].reverted === false)
+          || (myItems[key].value === false && myItems[key].reverted === true)
+        ) ? 'on' : 'off')
+        .attr({ rel: myItems[key].data })
+        .text(myItems[key].label))
+      ;
+    var myLiElements = '';
   }
 };
 
