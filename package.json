@@ -1,9 +1,30 @@
 {
-    "description": "FireSwitch is a simple addon to switch on/off some behaviors such like JavaScript", 
+    "description": "FireSwitch is a simple addon to switch on/off some behaviors such like JavaScript or Geolocation", 
     "license": "MPL 1.1/GPL 2.0/LGPL 2.1", 
     "author": "Aur\u00e9lien MANCA (http://www.amanca.fr)", 
-    "version": "0.2", 
+    "version": "0.3", 
     "fullName": "Fire Switch", 
     "id": "jid0-rRkIEWweV0FdnCAPggdbxJB0FHs",
-    "name": "fire-switch"
+    "name": "fire-switch",
+    "preferences": [{
+			"name": "javascript.enabled",
+			"title": "Switch JavaScript?",
+			"type": "bool",
+			"value": true
+    }, {
+			"name": "geo.enabled",
+			"title": "Switch Geolocation?",
+			"type": "bool",
+			"value": true
+    }, {
+			"name": "pdfjs.disabled",
+			"title": "Switch PDF viewer?",
+			"type": "bool",
+			"value": false
+    }, {
+			"name": "webgl.disabled",
+			"title": "Switch WebGL?",
+			"type": "bool",
+			"value": false
+    }]
 }
