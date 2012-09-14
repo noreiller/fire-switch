@@ -1,4 +1,4 @@
-This is the fire-switch-0.2 add-on.  It contains:
+This is the fire-switch Mozilla Firefox add-on.  It contains:
 
 * A program (lib/main.js).
 * A few tests.
